@@ -1,1 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
 
+        /* SECTION */
+        .container {
+            font-size: 14px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            gap: 10px;
+        }
+
+        /* ARTICLE 1*/
+        .card-one {
+            background-color:thistle;
+            flex: 1;
+        }
+
+        /* ARTICLE 2*/
+        .card-two {
+            background-color:burlywood;
+            flex: 1;
+        }
+        
+        /* ARTICLE 3*/
+        .card-three {
+            background-color:wheat;
+            flex: 1;
+        }
+         
+        /* ARTICLE 4*/
+        .card-four {
+            background-color:lightgreen;
+            flex: 1;
+        }
+
+        .card-five {
+            background-color:lightgreen;
+            flex: 1;
+        }
+
+        .card-six {
+            background-color:lightgreen;
+            flex: 0.7;
+        }
+
+        /* ALL ARTICLES */
+        .info {
+            padding-left: 10px;
+            padding-bottom: 10px;
+            border: 3px solid black;
+            border-radius: 15px;
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        /* ALL FAUCET CRYPTO */
+        .faucetList {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /*  EACH FAUCET PLATFORM */
+        .faucet {
+            display: flex;
+            padding-bottom: 2px;
+            gap: 3px;
+        }
+
+        /* ALL FAUCET CRYPTO */
+        .faucet > * {
+            width: 130px;
+        }
+
+        /* NAME OF FAUCET CRYPTO */
+        .faucet span {
+            flex: 0.4;
+            border: 1px solid black;
+            text-indent: 10px;
+            font-weight: bold;
+        }
+
+        /* BUTTONS */
+        button {
+            flex: 0.27;
+        }
+
+        /* TIMERS */
+        input {
+            flex: 0.3;
+        }
+
+        /* PTC COLUMN 1 */
+        .col1 {
+            background-color:darksalmon;
+            flex: 1;
+        }
+
+        /* PTC AND DAILY BONUS COLUMN 2 */
+        .col2 {
+            background-color: pink;
+            flex: 1;
+        }
+
+        /* PTC ACHIEVE COLUMN 3 */
+        .col3 {
+            background-color:cyan;
+            flex: 1;
+        }
+
+        /* TITLE AND LISTITEMS */
+        h4, li {
+            font-weight: bold;
+            color: red;
+        } 
+
+        /* NUMBER OF CLICK */
+        #points {
+            padding-left: 10px;
+        }
+
+        /* ALL COLUMNS */
+        .ptc {
+            display: flex;
+        }
+
+        /* ALL PTC */
+        .ptc div {
+            border: 1px solid black;
+            border-radius: 15px;
+            box-sizing: border-box;
+        }
+
+        /* ALL LIST ITEMS */
+        .info li {
+            list-style-type: none;
+            padding-left: 15px;
+        }
+
+        /* ALL COLUMNS */
+        .cols {
+            margin: 3px;
+            padding-bottom: 15px;
+            width: 90px;
+        }
+
+        .hidden {
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="container">
+        <article class="info card-one">
+
+
+            <div class="faucetList">
+                <center><h4 id="limit">FAUCETS<span id="points"></span><span id="getValue"></span></h4></center>
+                <div><span></span></div> 
+                <div><span></span></div>
+                <div><span></span></div>
+                <div><span></span></div>
+                
+                
+                <center><h4>PHASE 2</h4></center>
+                <div><span></span></div>
+                <div><span></span></div>
+                <div><span></span></div>
+                
+    
+                <center><h4>PHASE 3</h4></center>
+                <div><span></span></div>
+                <div><span></span></div>
+                <div><span></span></div> 
+                <div><span></span></div>    
+                <div><span></span></div>
+                <div><span></span></div> 
+                
+                <center><h4>PHASE 4</h4></center>
+                <div><span></span></div>
+                <div><span></span></div>
+                
+                <center><h4>PHASE 5</h4></center>
+                <div><span></span></div>
+                <div><span></span></div>
+                <div><span></span></div>
+                <div><span></span></div>
+                <div><span></span></div>
+            </div>
+        </article>
+
+        <article class="info card-two">
+            <div class="faucetList">
+                
+                <center><h4>PHASE 6</h4></center>
+                <div><span></span></div>
+                <div><span></span></div> 
+                <div><span></span></div>
+                
+                <center><h4>PHASE 7</h4></center>
+                <div><span></span></div>
+                <div><span></span></div>
+                <div><span></span></div> 
+                <div><span></span></div>
+
+                <center><h4>PHASE 8</h4></center>
+                <div><span></span></div>
+            
+                <article class="ptc">
+                    <div class="cols col1">
+                        <center><h4>PTC 1</h4></center>
+                        <li><a href="https://www.coinpayu.com/dashboard/ads_surf" target="_blank">COINPAYU</a></li>
+                        <li><a href="http://www.cointiply.com/ptc" target="_blank">COINTIPLY</a></li>
+                        <li><a href="https://adbtc.top/surf/browse" target="_blank">ADBTC TOP</a></li>
+                        
+                        <!--
+                        <li><a href="https://btcbunch.com/ptc" target="_blank">BTC BUNCH</a></li>
+                        -->
+                        
+                        <li><a href="https://btcadspace.com/surf" target="_blank">ADSPACE</a></li>
+                        <li><a href="https://rushbitcoin.com/ptc.html" target="_blank">RUSHBITCOIN</a></li>
+                        <li><a href="https://cryptobigpay.online/ptc" target="_blank">BIGPAY</a></li>
+                        
+                        <!--
+                        <li><a href="https://grab.tc/?page=ptc" target="_blank">GRAB TC</a></li>
+                        <li><a href="https://click.namaidani.com/ptc.html" target="_blank">NAMAIDANI</a></li>
+                        <li><a href="https://simplebits.io/ptc" target="_blank">SIMPLEBITS</a></li>
+                        -->
+                        
+                        <li><a href="https://viefaucet.com/app/ptc" target="_blank">VIE FAUCET</a></li>
+                        <li><a href="https://larvelfaucet.com/ptc" target="_blank">LARVEL</a></li>
+                        <li><a href="https://banfaucet.com/ptc" target="_blank">BAN FAUCET</a></li>
+                        <li><a href="https://coinpayz.xyz/ptc" target="_blank">COINPAYZ</a></li>
+                        <li><a href="https://feyorra.top/ptc" target="_blank">FEYORRA</a></li>
+                        <li><a href="https://www.freebnbcoin.com/ptc" target="_blank">FREEBNB</a></li>
+                        <li><a href="https://earnbitmoon.club/ptc.html" target="_blank">EARNBITMOON</a></li>
+                        <li><a href="https://qashbits.com/?page=ptc" target="_blank">QASHBITS</a></li>
+                        <li><a href="https://coinadster.com/ptc.html" target="_blank">COINADSTER</a></li>
+                        <li><a href="https://autofaucet.dutchycorp.space/ptc/wall.php" target="_blank">DUTCHY 1</a></li>
+                        <li><a href="https://autofaucet.dutchycorp.space/ptc/" target="_blank">DUTCHY 2</a></li>
+                        <li><a href="https://faucetcrypto.com/ptc-advertisement/list" target="_blank">F-CRYPTO</a></li>
+                        <li><a href="https://whoopyrewards.com/ptc" target="_blank">WHOOPY</a></li>
+                    </div>
+                    
+                    <div class="cols col2"> 
+                        <center><h4>PTC 2</h4></center>
+                        <li><a href="https://claimbits.net/ptc.html" target="_blank">CLAIMBITS</a></li>
+                        <li><a href="https://faucetsfly.com/ptc.html" target="_blank">FAUCETS FLY</a></li>
+                        <li><a href="https://freesolana.top/ptc" target="_blank">FREE SOL</a></li>
+                        <li><a href="https://www.goldenclix.com/index.php?view=ads_page" target="_blank">GOLDEN CLIX</a></li>
+                        
+                        <center><h4>FAU ACHIEVE</h4></center>    
+                        <li><a href="https://viefaucet.com/app/challenge" target="_blank">VIE FAUCET</a></li>
+                        <li><a href="https://coinpayz.xyz/achievements" target="_blank">COINPAYZ</a></li>
+                        <li><a href="https://cryptoflare.net/achievements" target="_blank">CRYPTO FLARE</a></li>
+                        <li><a href="https://www.freebnbcoin.com/achievements" target="_blank">FREEBNBCOIN</a></li>
+                        <li><a href="https://larvelfaucet.com/daily-rewards" target="_blank">LARVEL</a></li>
+                        <li><a href="https://bithub.win/achievements" target="_blank">BITHUB</a></li>
+                        <li><a href="https://cryptobigpay.online/challenges" target="_blank">BIG PAY</a></li>
+                        <li><a href="https://feyorra.top/achievements" target="_blank">FEYORRA</a></li>
+                        <li><a href="https://freesolana.top/achievements" target="_blank">FREE SOL</a></li>
+                        <li><a href="https://simplebits.io/challenges" target="_blank">SIMPLE BITS</a></li>
+                        <li><a href="https://btcbunch.com/achievements#google_vignette" target="_blank">BTC BUNCH</a></li>                        
+                    </div> 
+                    
+                    <div class="cols col3">
+                        <center><h4>DAILY BONUS</h4></center>
+                        <li><a href="https://viefaucet.com/app/bonus" target="_blank">VIE FAUCET</a></li>
+                        <li><a href="https://earnbitmoon.club/bonus.html" target="_blank">EARNBITMOON</a></li>
+                        <li><a href="https://coinpayz.xyz/daily" target="_blank">COINPAYZ</a></li>
+                        <li><a href="https://cryptoflare.net/dashboard" target="_blank">CRYPTO FLARE</a></li>
+                        <li><a href="https://faucet4u.com/dashboard" target="_blank">FAUCET4U</a></li> 
+                        <li><a href="https://whoopyrewards.com/dashboard" target="_blank">WHOOPY</a></li>
+                        <li><a href="https://www.freebnbcoin.com/dailybonus" target="_blank">FREE BNB</a></li>
+                        <li><a href="https://freesolana.top/dashboard" target="_blank">FREE SOLANA</a></li>
+                        <li><a href="https://earnfreebtc.io/?r=1513#" target="_blank">FREE BTC</a></li>
+
+                        <center><h4>BAN FAUCET</h4></center>
+                        <li><a href="https://banfaucet.com/offerwall/monlix" target="_blank">MONLIX</a></li>
+                        <li><a href="https://banfaucet.com/offerwall/excentiv" target="_blank">EXENTIV</a></li>
+                        <li><a href="https://banfaucet.com/offerwall/offers4crypto" target="_blank">O4CRYPTO</a></li>
+                        <li><a href="https://banfaucet.com/offerwall/ewall" target="_blank">EWALL</a></li>
+                        <li><a href="https://banfaucet.com/offerwall/bitcotasks" target="_blank">BITCO TASKS</a></li>
+
+                    </div>
+                </article>
+            </div> 
+        </article>
+        
+        <aricle class="info card-three">            
+            <center><h4>VIEW ARTICLES</h4></center>
+            <li><a href="https://cryptoflare.net/articles" target="_blank">CRYPTOFLARE</a></li>
+            <li><a href="https://bithub.win/articles" target="_blank">BITHUB</a></li>
+            <li><a href="https://soundcash.co/user/ptc" target="_blank">SOUND CASH</a></li>
+            
+            <center><h4>BTC CONVERTER</h4></center>
+            <li><a href="https://www.unitconverters.net/currency/usd-to-btc.htm" target="_blank">USD TO BTC</a></li>                       
+            <li><a href="https://www.unitconverters.net/currency/btc-to-php.htm" target="_blank">BTC TO PHP</a></li>
+            <li><a href="https://3commas.io/converter/bnb-btc" target="_blank">BNB TO BTC</a></li>
+            
+            <center><h4>PROGRAMMING</h4></center>
+            <li><a href="../Zelf-Training/CSS/css.html" target="_blank">CSS</a></li>
+            <li><a href="../Zelf-Training/JAVASCRIPT/javascript.html" target="_blank">JAVASCRIPT</a></li>
+            <li><a href="../Zelf-Training/JAVASCRIPT OOP/javascript_oop.html" target="_blank">JAVASCRIPT OOP</a></li>
+            <li><a href="../Zelf-Training/JAVASCRIPT DOM/javascript_dom.html" target="_blank">JAVASCRIPT DOM</a></li>
+            <li><a href="../Zelf-Training/PHP/php.html" target="_blank">PHP</a></li>
+            <li><a href="../Zelf-Training/JQUERY/JQuery.html" target="_blank">JQUERY</a></li>
+            
+            <center><h4>OTHERS</h4></center>
+            <li><a href="https://mikebestako.github.io/RoannPawnshop/" target="_blank">ACTIVITIES</a></li>
+            <li><a href="../ZZZ-REWARDY-2024/rewardy.html" target="_blank">REWARDY</a></li>
+            <li><a href="../ZZZ - Web Development Source Code/WEB_DEV_BOOTCAMP_2023/sample.html" target="_blank">PRACTICE CODING</a></li>
+            <li><a href="../ZZZ - Web Development Source Code/WEB_DEV_BOOTCAMP_2023/Sample2.html" target="_blank">PRACTICE CODING 2</a></li>
+            <li><a href="./futureMay2024.html" target="_blank">FUTURE MAY 2024</a></li>
+            <li><a href="../Zelf-Training/JOB APPLIED/index.html" target="_blank">JOB APPLIED</a></li>
+            <li><a href="../ZZZ-RESUME/index.html" target="_blank">RESUME</a></li>
+            <li><a href="../Zelf-Training/ENGLISH FOR BEGINNERS/index.html">ENGLISH 1</a></li>
+
+            <center><h4>SHORTLINK</h4></center>
+            <li id="cuty1"><a href="https://earnbitmoon.club/shortlinks.html" target="_blank">EARNBITMOON</a></li>
+            <li id="cuty2"><a href=https://coinpayz.xyz/links" target="_blank">COINPAYZ</a></li>
+            <li id="cuty3"><a href="https://faucetsfly.com/shortlinks.html" target="_blank">FAUCETSFLY</a></li>
+            <li id="cuty4"><a href="https://coinadster.com/shortlink.html" target="_blank">COINADSTER</a></li>
+            <li id="cuty5"><a href="https://www.freebnbcoin.com/links" target="_blank">FREEBNB</a></li>
+            <li id="cuty6"><a href="https://claimbits.net/shortlinks.html" target="_blank">CLAIMBITS</a></li>
+            <li id="cuty7"><a href="https://grab.tc/?page=shortlinks" target="_blank">GRAB</a></li>
+        </aricle>
+        
+        <article class="info card-four">
+            <center><h4>CUTY IO</h4></center>
+            <li id="cuty8"><a href="https://ptc4btc.com/links" target="_blank">PTC4BTC</a></li>
+            
+            <center><h4>FCLC<h4></center>
+            <li id="cuty9"><a href="https://freesolana.top/links" target="_blank">FREESOLANA</a></li>
+            <li id="fclc1"><a href="https://earnbitmoon.club/shortlinks.html" target="_blank">EARNBITMOON</a></li>
+            <li id="fclc2"><a href="https://bitcointricks.com/?page=shortlinks" target="_blank">BITCOIN TRICKS</a></li>
+            <li id="fclc3"><a href="https://claimbits.net/shortlinks.html" target="_blank">CLAIMBITS</a></li>
+            <li id="fclc4"><a href="https://btcbunch.com/links" target="_blank">BTC BUNCH</a></li>
+            <li id="fclc5"><a href="https://grab.tc/?page=shortlinks" target="_blank">GRAB TC</a></li>	
+            <li id="fclc6"><a href="https://faucetsfly.com/shortlinks.html" target="_blank">FAUCETS FLY</a></li>
+            <li id="fclc7"><a href="https://coinadster.com/shortlink.html" target="_blank">COINADSTER</a></li>      
+            <li id="fclc8"><a href="https://ptc4btc.com/links" target="_blank">PTC4BTC</a></li>
+            <li id="fclc9"><a href="https://larvelfaucet.com/short-urls" target="_blank">LARVEL FAUCET</a></li>
+
+            <center><h4>SHRINKEARN</h4></center>
+            <li id="shrinkearn1"><a href="https://viefaucet.com/app/link" target="_blank">VIEFAUCET</a></li>  
+            <li id="shrinkearn2"><a href="https://earnbitmoon.club/shortlinks.html" target="_blank">EARNBITMOON</a></li> 
+            <li id="shrinkearn3"><a href="https://rushbitcoin.com/shortlinks.html" target="_blank">RUSHBITCOIN</a></li>
+            <li id="shrinkearn4"><a href="https://coinpayz.xyz/links" target="_blank">COINPAYZ</a></li>
+            <li id="shrinkearn5"><a href="https://faucetsfly.com/shortlinks.html" target="_blank">FAUCETSFLY</a></li>
+            <li id="shrinkearn6"><a href="https://feyorra.top/links" target="_blank">FEYORRA</a></li>
+            <li id="shrinkearn7"><a href="https://banfaucet.com/links" target="_blank">BAN FAUCET</a></li>
+            <li id="shrinkearn8"><a href="https://www.freebnbcoin.com/links" target="_blank">FREE BNB</a></li>
+            <li id="shrinkearn9"><a href="https://grab.tc/?page=shortlinks" target="_blank">GRAB TC</a></li>
+            <li id="shrinkearn10"><a href="https://btcbunch.com/links" target="_blank">BTC BUNCH</a></li>
+            <li id="shrinkearn13"><a href="https://coinadster.com/shortlink.html" target="_blank">COINADSTER</a></li>
+            <li id="shrinkearn15"><a href="https://larvelfaucet.com/short-urls" target="_blank">LARVEL FAUCET</a></li>
+            <li id="shrinkearn16"><a href="https://claimbits.net/shortlinks.html" target="_blank">CLAIMBITS</a></li>
+            <li id="shrinkearn18"><a href="https://freesolana.top/links" target="_blank">FREESOLANA</a></li>
+           -->     
+        </article>
+
+        <article class="info card-five">
+            <center><h4>LEARN NEW</h4></center>
+            <li><a href="../Zelf-Training/PRACTICE_001/html_skeleton.html" target="_blank">SAMPLE 1</a></li>
+            <li><a href="../Zelf-Training/PRACTICE_001/html_skeleton2.html" target="_blank">SAMPLE 2</a></li>
+        </article>
+
+        <article class="info card-six">
+
+        </article>
+
+    </section>
+
+    <script src="./script/functionJoy.js"></script>
+    <script src="./script/songs.js"></script>
+    <script>
+        let titleCrypto = ['COINPAYU', 'ADBTC TOP', 'ADSPACE', 'VIE FAUCET', 'COINTIPLY', 'LARVEL', 'CRYPTO FLARE',
+                           'BITHUB', 'COINPAYZ', 'FREE BNB', 'EARNBITMOON', 'BIGPAY', 'BAN FAUCET', 'CLAIMBITS',
+                           'QASHBITS', 'FEYORRA', 'PINOYFAUCET', 'FAUCETSFLY', 'COINADSTER', 'FREESOLANA', 'F-CRYPTO',
+                           'DUTCHY', 'SIMPLE BITS', 'GRAB TC', 'FREE BTC', 'FREE LITE', 'FREE ETH', 'FREE DOGE',
+                           'YANNIK', 'BTC TRICKS', 'RUSH BTC'];
+
+        let compute = document.getElementById('compute');
+
+        let points = document.getElementById('points');
+        let lists = document.querySelectorAll('a');
+        let text = document.getElementById('getValue');
+        let displayEarn = document.getElementById('displayEarn');
+        let limit = document.getElementById('limit');
+        let clickLeft = document.getElementById('clickLeft');
+
+        let countPoints = 0;
+        let count = 0;
+        let countLimit = 0;
+        //let earnPerHour = 0;
+        let numberOfClick = 498;
+        let onlyFiveClicks = 0;
+
+        let arrCountPlatform = [];
+        
+        limit.onclick = function(){
+            countLimit = 0;
+            points.textContent = `${countPoints} ==> ${countLimit}`;
+        }
+
+        // List of a Faucets [Label Name, Minutes, Link, Earn, Attribute id of Input Text, Index]
+        let faucetObj = {
+            faucet1: ['VIE FAUCET', 4, 'https://viefaucet.com/app/faucet', 1.3, 'countdown1', 0],
+            faucet2: ['BAN FAUCET', 4, 'https://banfaucet.com/faucet', 1.2, 'countdown2', 1],  
+            faucet3: ['FEYORRA', 4, 'https://feyorra.top/faucet', 0.789, 'countdown3', 2],
+            faucet4: ['WHOOPY', 4, 'https://whoopyrewards.com/faucet', 0.39, 'countdown4', 3],
+            
+            faucet5: ['COINTIPLY', 60, 'http://www.cointiply.com/home?intent=faucet', 6, 'countdown5', 4],
+            faucet6: ['FREEBITCOIN', 60, 'https://freebitco.in/', 1, 'countdown6', 5],
+            faucet7: ['BITCOIN TRICKS', 60, 'https://bitcointricks.com/?page=faucet', 1, 'countdown7', 6],
+            
+            faucet8: ['COINPAYZ', 5, 'https://coinpayz.xyz/faucet', 1.19, 'countdown8', 7],
+            faucet9: ['EARNBITMOON', 5, 'https://earnbitmoon.club/', 1, 'countdown9', 8],
+            faucet10: ['CLAIMBITS', 5, 'https://claimbits.net/faucet.html', 0.5, 'countdown10', 9],
+            faucet11: ['WHOOPY 2', 4, 'https://whoopyrewards.com/faucet', 0.39, 'countdown11', 10],
+
+            faucet11: ['RUSHBITCOIN', 5, 'https://rushbitcoin.com/', 0.82, 'countdown11', 10],
+            
+            
+            faucet12: ['AUTOFAUCET', 5, 'https://autofaucet.org/earn/faucet', 0.1639, 'countdown12', 11],
+            faucet13: ['BITHUB', 5, 'https://bithub.win/faucet', 1, 'countdown13', 12],
+            faucet14: ['FREE BNB', 5, 'https://www.freebnbcoin.com/faucet', 1.1, 'countdown14', 13],
+            
+            faucet15: ['CRYPTO FLARE', 15, 'https://cryptoflare.net/claim', 2, 'countdown15', 14],
+            faucet16: ['LARVEL FAUCET', 30, 'https://larvelfaucet.com/faucet', 1, 'countdown16', 15],
+            faucet17: ['DUTCHY CORP 1', 30, 'https://autofaucet.dutchycorp.space/roll.php', 1, 'countdown17', 16],
+            
+            faucet18: ['WHOOPY 3', 4, 'https://whoopyrewards.com/faucet', 0.39, 'countdown18', 17],
+            //faucet18: ['QASHBITS', 5, 'https://qashbits.com/', 0.57, 'countdown18', 17],
+            
+            faucet19: ['FAUCET CRYPTO', 20, 'https://faucetcrypto.com/dashboard', 1, 'countdown19', 18],
+            faucet20: ['DUTCHY CORP 2', 30, 'https://autofaucet.dutchycorp.space/coin_roll.php', 1, 'countdown20', 19],
+            
+            faucet21: ['COINADSTER', 8, 'https://coinadster.com/faucet.html', 1, 'countdown21', 20],
+            faucet22: ['FREESOLANA', 10, 'https://freesolana.top/faucet', 1, 'countdown22', 21],
+            faucet23: ['WHOOPY 4', 4, 'https://whoopyrewards.com/faucet', 0.39, 'countdown23', 22],
+
+            //faucet23: ['FAUCETS FLY', 10, 'https://faucetsfly.com/roll.html', 1, 'countdown23', 22],
+            
+            faucet24: ['FREE LITECOIN', 66, 'https://www.free-litecoin.com/', 1.5, 'countdown24', 23],
+            faucet25: ['FREE ETHEREUM', 140, 'https://www.free-ethereum.io/free/', 1.7, 'countdown25', 24],
+            faucet26: ['FREE DOGECOIN', 60, 'https://www.free-doge.io/free/', 1.9, 'countdown26', 25],
+            faucet27: ['YANNIK', 60, 'https://yannik.biz/index.php', 1, 'countdown27', 26],
+            faucet28: ['LARVEL GAME', 480, 'https://larvelfaucet.com/game', 3.39, 'countdown28', 27]
+        }
+
+        let colorsArr = ['yellow', 'aqua', 'pink', 'greenyellow', 'orange', 'darksalmon', 'blanchedalmond', 'cadetblue'];
+        let colorArr = [];
+    
+        for(let a = 0; a <= 10; a++){
+            for(let color of colorsArr){
+                colorArr.push(color);
+            }
+        }
+    
+        let faucets = document.querySelectorAll('.faucetList div');
+        let platforms = Object.entries(faucetObj);
+        let Timer = '';
+        let x = 0;
+    
+        for(const [key, value] of platforms){
+            let button = document.createElement('button'); // Creating an Element
+            let input = document.createElement('input'); // Creating an Element
+    
+            faucets[x].classList.add('faucet'); // Add Class in a Faucet
+            faucets[x].lastElementChild.textContent = value[0]; // Label Name of Faucet
+            faucets[x].lastElementChild.style.backgroundColor = colorArr[x]; // Label BackGround Color of Faucet
+                
+            faucets[x].lastElementChild.classList.add('setFaucetProperties'); // Add Class
+            button.classList.add('buttonProperties'); // Add Class
+    
+            faucets[x].append(button); // Adding Element in a Div Faucet Class
+            faucets[x].append(input); // Adding Element Div Faucet Class
+    
+            input.type = "text"; // Set Input to Text
+            input.setAttribute("id", `countdown${x+1}`); // Set ID of Input Text 
+    
+            Timer = String(value[1]); // Convert value type into String
+            Timer = Timer.length == 1 ? `0${value[1]}` : value[1]; // Asking Whether a Length of a Number String is 1 or 2
+            faucets[x].lastElementChild.value = `${Timer}:00`; // Set Timer Value of an Input Text
+    
+            x++;
+            button.textContent = `SET TIMER ${x}`; // Set Text of a Button (SET TIMER 01)
+        }    
+        
+        let buttons = document.querySelectorAll('button');
+        let inputs = document.getElementsByTagName('input');
+        let obj = Object.entries(faucetObj);
+    
+        let headers = document.querySelectorAll('.faucetList header');
+        let colorWhite = document.getElementsByTagName('h4');
+    
+        for(let [key, value] of obj){
+            buttons[value[5]].onclick = function(){
+                buttons[value[5]].disabled = true;
+                text.textContent = '  --->   ' + value[0];
+                text.style.color = 'blue';
+
+                switch(value[0]){                       
+                    case 'BAN FAUCET':
+                        //pauseMusic(burning);
+                        numberOfClick--;
+                        onlyFiveClicks = 0;
+                        break;
+                    case 'COINTIPLY':
+                        break;
+                    case 'LARVEL FAUCET':
+                        break;
+                    case 'MINING':
+                        break;
+                    case 'LARVEL GAME':
+                        pauseMusic(pod);
+                        break;
+                    case 'CRYPTO FLARE':
+                        break;
+                    case 'EARNBITMOON':
+                        pauseMusic(wedd);
+                        break;
+                    case 'FREE LITECOIN':
+                        pauseMusic(gohan);
+                        break;
+                    case 'FREE ETHEREUM':
+                        pauseMusic(burning);
+                        break;
+                }
+            
+                if(onlyFiveClicks == 9999){
+                    alert('Please Click BAN FAUCET');
+                    buttons[value[5]].disabled = false;
+                    return  
+                } else {
+                    onlyFiveClicks++;
+                }
+        
+                setTimer(value[1], value[2], value[3], value[4], buttons[value[5]]);
+                points.textContent = `${countPoints} ==> ${countLimit}`;    
+            }
+        }
+   
+        for(let list of lists){
+            list.addEventListener('click', function(){
+                list.style.backgroundColor = 'greenyellow';
+            });
+        }
+    </script>
+</body>
+</html>
